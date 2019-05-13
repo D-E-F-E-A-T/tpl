@@ -20,7 +20,7 @@
             <form action="handler.php" method="post" enctype="multipart/form-data">
                 <div class="form-group">
                     <label>Select image(s)</label>
-                    <input type="file" name="images" multiple class="form-control">
+                    <input type="file" name="images[]" multiple class="form-control">
                 </div>
 
                 <div class="form-group">
@@ -34,12 +34,12 @@
 
                 <div class="form-group">
                     <label>Brightness</label>
-                    <input type="number" min="0" max="100" class="form-control" name="brightness">
+                    <input type="number" min="-100" max="100" class="form-control" name="brightness">
                 </div>
 
                 <div class="form-group">
                     <label>Contrast</label>
-                    <input type="number" min="0" max="100" class="form-control" name="contrast">
+                    <input type="number" min="-100" max="100" class="form-control" name="contrast">
                 </div>
 
                 <input type="submit" class="btn btn-success">
